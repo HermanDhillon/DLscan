@@ -9,7 +9,7 @@ function Scanner(props) {
     },
   });
 
-  return <video ref={ref} className=" w-full" />;
+  return <video ref={ref} />;
 }
 
 export default Scanner;
