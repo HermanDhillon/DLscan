@@ -1,17 +1,18 @@
 import DLsamplePic from "../assets/DLsamplePic.jpg";
 import WebcamModal from "./WebcamModal";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 function Hero() {
   const [camPaused, setCamPaused] = useState(true);
-  const [result, setResult] = useState(false);
+  const [result, setResult] = useState(null);
+
+  useEffect(() => {}, [result]);
 
   return (
     <>
       <WebcamModal
         camPaused={camPaused}
         setCamPaused={setCamPaused}
-        result={result}
         setResult={setResult}
       />
       <div className="m-5 md:m-20">
