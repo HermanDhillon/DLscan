@@ -5,8 +5,8 @@ function Scanner(props) {
   const { setResult } = props;
   const { ref } = useZxing({
     onDecodeResult(result) {
-      setResult(Parser(result.getText()).parse());
-      console.log(Parser(result.getText()).parse());
+      setResult(result.getText());
+      console.log(Parser(result.getText()));
     },
   });
 
