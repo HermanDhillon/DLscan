@@ -4,7 +4,7 @@ import { useState } from "react";
 
 function Hero() {
   const [camPaused, setCamPaused] = useState(true);
-  const [result, setResult] = useState(null);
+  const [result, setResult] = useState(false);
 
   return (
     <>

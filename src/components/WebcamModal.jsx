@@ -14,6 +14,7 @@ function WebcamModal(props) {
           <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure>
               <Scanner
+                result={props.result}
                 setResult={props.setResult}
                 camPaused={props.camPaused}
                 setCamPaused={props.setCamPaused}
