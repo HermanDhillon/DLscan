@@ -21,7 +21,7 @@ function WebcamModal() {
               <h2 className="card-title">
                 Scan the large Barcode on the back of the License
               </h2>
-              <p>{result}</p>
+              <p>{JSON.stringify(result)}</p>
             </div>
           </div>
         </div>
