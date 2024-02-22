@@ -1,8 +1,6 @@
 import Scanner from "./Scanner";
-import { useState } from "react";
 
-function WebcamModal() {
-  const [result, setResult] = useState("");
+function WebcamModal(props) {
   return (
     <>
       <dialog id="webcamModal" className="modal">
@@ -15,13 +13,16 @@ function WebcamModal() {
           </form>
           <div className="card lg:card-side bg-base-100 shadow-xl">
             <figure>
-              <Scanner setResult={setResult} />
+              <Scanner
+                setResult={props.setResult}
+                camPaused={props.camPaused}
+                setCamPaused={props.setCamPaused}
+              />
             </figure>
             <div className="card-body">
               <h2 className="card-title">
                 Scan the large Barcode on the back of the License
               </h2>
-              <p>{JSON.stringify(result)}</p>
             </div>
           </div>
         </div>
