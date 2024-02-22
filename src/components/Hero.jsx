@@ -42,23 +42,24 @@ function Hero() {
           </div>
         </div>
       </div>
-
-      <div className="m-5 md:m-20">
-        <div className="hero min-h-screen bg-base-200 rounded-lg">
-          <div className="hero-content text-center">
-            <div className="max-w-md">
-              <h1 className="text-5xl font-bold">Result</h1>
-              <p className="py-6">{JSON.stringify(result)}</p>
-              <button
-                onClick={() => setResult(null)}
-                className="btn btn-primary"
-              >
-                Reset
-              </button>
+      {result != null && (
+        <div className="m-5 md:m-20">
+          <div className="hero min-h-screen bg-base-200 rounded-lg">
+            <div className="hero-content text-center">
+              <div className="max-w-md">
+                <h1 className="text-5xl font-bold">Result</h1>
+                <p className="py-6">{JSON.stringify(result)}</p>
+                <button
+                  onClick={() => setResult(null)}
+                  className="btn btn-primary"
+                >
+                  Reset
+                </button>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      )}
     </>
   );
 }
