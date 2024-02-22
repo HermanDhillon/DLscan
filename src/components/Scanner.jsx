@@ -1,12 +1,12 @@
 import { useZxing } from "react-zxing";
-const { parse } = require("driver-license-parser");
+import { Parser } from "driver-license-parser";
 
 function Scanner(props) {
   const { setResult } = props;
   const { ref } = useZxing({
     onDecodeResult(result) {
       setResult(result.getText());
-      console.log(parse(result.getText()));
+      console.log(Parser(result.getText()).parse());
     },
   });
 
