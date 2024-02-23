@@ -6,8 +6,6 @@ function Scanner(props) {
   const { ref } = useZxing({
     onDecodeResult(result) {
       setResult(Parser(result.getText()));
-      console.log(Parser(result.getText()));
-      console.log("RAW: ", result.getText());
       setCamPaused(true);
       webcamModal.close();
     },
