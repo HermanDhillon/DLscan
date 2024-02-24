@@ -8,6 +8,14 @@ function Scanner(props) {
       setResult(Parser(result.getText()));
       setCamPaused(true);
       webcamModal.close();
+      console.log(Parser(result.getText())); // Parsed license data available in console
+      setTimeout(
+        () =>
+          document
+            .getElementById("results")
+            .scrollIntoView({ behavior: "smooth" }),
+        250
+      );
     },
     paused: camPaused,
   });

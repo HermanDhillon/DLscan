@@ -4,8 +4,8 @@ import Results from "./Results";
 import { useState } from "react";
 
 function Hero() {
-  const [camPaused, setCamPaused] = useState(true);
-  const [result, setResult] = useState(null);
+  const [camPaused, setCamPaused] = useState(true); // state used for camera on/off
+  const [result, setResult] = useState(undefined); // the parsed result of a barcode scan
 
   return (
     <>
@@ -16,12 +16,12 @@ function Hero() {
       />
       <div className="m-5 md:m-20">
         <div className="hero min-h-screen bg-base-200 rounded-lg">
-          <div className="hero-content flex-col lg:flex-row">
+          <div className="hero-content flex-col gap-20">
             <img
               src={DLsamplePic}
               className="max-w-sm rounded-2xl shadow-2xl w-[100%]"
             />
-            <div>
+            <div className="md:mx-10">
               <h1 className="text-5xl font-bold">Scan your Driver License</h1>
               <p className="py-6">
                 This simple application allows you to use your webcam to scan
@@ -33,8 +33,8 @@ function Hero() {
               <button
                 className="btn btn-primary"
                 onClick={() => {
-                  webcamModal.showModal();
-                  setCamPaused(false);
+                  webcamModal.showModal(); // opens webcam/instruction modal on click
+                  setCamPaused(false); // turns on webcam
                 }}
               >
                 Scan License
@@ -43,7 +43,10 @@ function Hero() {
           </div>
         </div>
       </div>
-      {result != null && <Results result={result} setResult={setResult} />}
+      {/* conditionally render results display if result state is set after successful scan*/}
+      {result != null && (
+        <Results result={result} setResult={setResult} id="results" />
+      )}
     </>
   );
 }
