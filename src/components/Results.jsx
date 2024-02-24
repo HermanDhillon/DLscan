@@ -47,10 +47,9 @@ function Results(props) {
                       Address
                     </span>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
-                      {license["street"]}
-                      <br></br>
-                      {license["city"]},{license["state"]}
-                      {license["firstName"]}
+                      {`${license["street"]}} \n
+                      ${license["city"]}, ${license["state"]} \n
+                      ${license["zip"].slice(5)}`}
                     </p>
                   </div>
                 </div>
