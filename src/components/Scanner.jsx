@@ -6,10 +6,16 @@ function Scanner(props) {
   const { ref } = useZxing({
     onDecodeResult(result) {
       setResult(Parser(result.getText()));
-      console.log(Parser(result.getText()));
-      console.log("RAW: ", result.getText());
       setCamPaused(true);
       webcamModal.close();
+      console.log(Parser(result.getText())); // Parsed license data available in console
+      setTimeout(
+        () =>
+          document
+            .getElementById("results")
+            .scrollIntoView({ behavior: "smooth" }),
+        250
+      );
     },
     paused: camPaused,
   });
