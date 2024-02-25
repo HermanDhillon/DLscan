@@ -14,7 +14,7 @@ function Results(props) {
             <div>
               <div className="card card-normal  m-4 bg-white text-neutral-content">
                 <div className="card-body flex-col md:flex-row md:justify-evenly text-left">
-                  <div className=" justify-start">
+                  <div className=" min-w-[50%]">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       First Name
                     </h3>
@@ -34,7 +34,7 @@ function Results(props) {
                       {license["lastName"]}
                     </p>
                   </div>
-                  <div className=" justify-start">
+                  <div className=" min-w-[50%]">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Issue Date
                     </h3>
