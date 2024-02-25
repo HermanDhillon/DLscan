@@ -13,7 +13,7 @@ function Results(props) {
             </h2>
             <div>
               <div className="card card-normal  m-4 bg-white text-neutral-content">
-                <div className="card-body flex-col md:flex-row md:justify-around text-left">
+                <div className="card-body flex-col md:flex-row md:justify-evenly text-left">
                   <div className=" justify-start">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       First Name
