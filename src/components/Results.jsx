@@ -49,7 +49,7 @@ function Results(props) {
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
                       {`${license["street"]} \n
                       ${license["city"]}, ${license["state"]} \n
-                      ${license["zip"].slice(0, 6)}`}
+                      ${license["zip"].slice(0, 5)}`}
                     </p>
                   </div>
                 </div>
