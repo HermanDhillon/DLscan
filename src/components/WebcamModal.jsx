@@ -19,7 +19,7 @@ function WebcamModal(props) {
               ✕
             </button>
           </form>
-          <div className="card lg:card-side shadow-xl bg-slate-200">
+          <div className="card lg:card-side shadow-xl bg-base-300">
             <Scanner
               setResult={setResult}
               camPaused={camPaused}
@@ -40,7 +40,8 @@ function WebcamModal(props) {
                 </li>
                 <li>
                   4. Allow the camera to focus, moving the card back and forth
-                  if necessary.
+                  if necessary. Hold card steady for several seconds when
+                  focused.
                 </li>
               </ol>
             </div>

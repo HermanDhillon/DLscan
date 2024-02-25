@@ -15,7 +15,7 @@ function Hero() {
         setResult={setResult}
       />
       <div className="m-5 md:m-20">
-        <div className="hero min-h-screen bg-base-200 rounded-lg">
+        <div className="hero min-h-screen bg-base-300 rounded-lg">
           <div className="hero-content flex-col gap-20">
             <img
               src={DLsamplePic}

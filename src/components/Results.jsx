@@ -5,7 +5,7 @@ function Results(props) {
 
   return (
     <section aria-label="scan results" id="results" className="m-5 md:m-20">
-      <div className="hero min-h-screen bg-base-200 rounded-lg">
+      <div className="hero min-h-screen bg-base-300 rounded-lg">
         <div className="hero-content text-center min-w-[60%]">
           <div className="">
             <h2 className="text-5xl mb-10 font-bold">
@@ -13,8 +13,8 @@ function Results(props) {
             </h2>
             <div>
               <div className="card card-normal  m-4 bg-white text-neutral-content">
-                <div className="card-body flex-col gap-5 text-left">
-                  <div className="">
+                <div className="card-body flex-col md:flex-row md:justify-around text-left">
+                  <div className=" justify-start">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       First Name
                     </h3>
@@ -33,6 +33,8 @@ function Results(props) {
                     <p className="textarea textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["lastName"]}
                     </p>
+                  </div>
+                  <div className=" justify-start">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Issue Date
                     </h3>

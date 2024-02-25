@@ -21,7 +21,7 @@ function Scanner(props) {
     paused: camPaused,
   });
 
-  return <video ref={ref} />;
+  return <video className="bg-black" ref={ref} />;
 }
 
 export default Scanner;
