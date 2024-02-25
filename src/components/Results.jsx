@@ -4,49 +4,51 @@ function Results(props) {
   const raw = result["raw"];
 
   return (
-    <div id="results" className="m-5 md:m-20">
+    <section aria-label="scan results" id="results" className="m-5 md:m-20">
       <div className="hero min-h-screen bg-base-200 rounded-lg">
         <div className="hero-content text-center min-w-[60%]">
           <div className="">
-            <h2 className="text-5xl mb-10 font-bold">Results</h2>
+            <h2 className="text-5xl mb-10 font-bold">
+              Driver License Information
+            </h2>
             <div>
               <div className="card card-normal  m-4 bg-white text-neutral-content">
                 <div className="card-body flex-col gap-5 text-left">
-                  <div className="gap-5">
+                  <div className="">
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       First Name
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
-                      {license["firstName"]}
+                    <p className="textarea  textarea-xs w-full max-w-xs text-lg text-black break-words">
+                      Herman{license["firstName"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Middle Name
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["middleName"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Last Name
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["lastName"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Issue Date
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black">
                       {license["issueDate"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Expiration date
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black">
                       {license["expirationDate"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Address
                     </h3>
-                    <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black">
                       {`${license["street"]} \n
                       ${license["city"]}, ${license["state"]} \n
                       ${license["zip"].slice(0, 5)}`}
@@ -64,7 +66,7 @@ function Results(props) {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 /*

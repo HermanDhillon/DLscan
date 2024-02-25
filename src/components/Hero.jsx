@@ -36,6 +36,7 @@ function Hero() {
                   webcamModal.showModal(); // opens webcam/instruction modal on click
                   setCamPaused(false); // turns on webcam
                 }}
+                disabled={result ? true : false} // disable scan button if result is not reset
               >
                 Scan License
               </button>

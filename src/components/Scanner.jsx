@@ -1,4 +1,4 @@
-import { useZxing } from "react-zxing";
+import { useZxing } from "react-zxing"; // Barcode scanning library
 import { Parser } from "driver-license-parser";
 
 function Scanner(props) {
@@ -9,6 +9,7 @@ function Scanner(props) {
       setCamPaused(true);
       webcamModal.close();
       console.log(Parser(result.getText())); // Parsed license data available in console
+      //timeout delay for smoother look and feel
       setTimeout(
         () =>
           document
