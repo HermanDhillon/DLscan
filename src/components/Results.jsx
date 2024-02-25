@@ -19,7 +19,7 @@ function Results(props) {
                       First Name
                     </h3>
                     <p className="textarea  textarea-xs w-full max-w-xs text-lg text-black break-words">
-                      Herman{license["firstName"]}
+                      {license["firstName"]}
                     </p>
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Middle Name
