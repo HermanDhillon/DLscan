@@ -8,44 +8,44 @@ function Results(props) {
       <div className="hero min-h-screen bg-base-200 rounded-lg">
         <div className="hero-content text-center min-w-[60%]">
           <div className="">
-            <h1 className="text-5xl mb-10 font-bold">Results</h1>
+            <h2 className="text-5xl mb-10 font-bold">Results</h2>
             <div>
               <div className="card card-normal  m-4 bg-white text-neutral-content">
                 <div className="card-body flex-col gap-5 text-left">
                   <div className="gap-5">
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       First Name
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["firstName"]}
                     </p>
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       Middle Name
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["middleName"]}
                     </p>
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       Last Name
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black break-words">
                       {license["lastName"]}
                     </p>
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       Issue Date
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
                       {license["issueDate"]}
                     </p>
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       Expiration date
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
                       {license["expirationDate"]}
                     </p>
-                    <h4 className="label-text font-bold text-lg text-nowrap">
+                    <h3 className="label-text font-bold text-lg text-nowrap">
                       Address
-                    </h4>
+                    </h3>
                     <p className="textarea textarea-bordered textarea-xs w-full max-w-xs text-lg text-black">
                       {`${license["street"]} \n
                       ${license["city"]}, ${license["state"]} \n
