@@ -50,7 +50,7 @@ function Results(props) {
                     <h3 className="label-text font-bold text-lg text-nowrap">
                       Address
                     </h3>
-                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-black">
+                    <p className="textarea textarea-xs w-full max-w-xs text-lg text-wrap text-black">
                       {`${license["street"]} \n
                       ${license["city"]}, ${license["state"]} \n
                       ${license["zip"].slice(0, 5)}`}
