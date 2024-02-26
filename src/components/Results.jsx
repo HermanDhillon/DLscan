@@ -1,7 +1,6 @@
 function Results(props) {
   const { result, setResult } = props;
-  const license = result["license"];
-  const raw = result["raw"];
+  const license = result.license;
 
   return (
     <section aria-label="scan results" id="results" className="m-5 md:m-20">
@@ -71,46 +70,5 @@ function Results(props) {
     </section>
   );
 }
-/*
 
-city
-: 
-""
-country
-: 
-"Unknown"
-dateOfBirth
-: 
-"//"
-expirationDate
-: 
-"//"
-firstName
-: 
-""
-hairColor
-: 
-""
-issueDate
-: 
-"//"
-lastName
-: 
-""
-middleName
-: 
-""
-secondStreet
-: 
-""
-state
-: 
-""
-street
-: 
-""
-zip
-: 
-""
-*/
 export default Results;
