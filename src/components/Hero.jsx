@@ -28,7 +28,7 @@ function Hero() {
                 the barcode on your USA issued Driver License and extract
                 information from it to use however you want. Information such
                 as: Full name, Address, DL issuance & expiration dates, etc. Get
-                started by clicking the "Scan License" button!
+                started by clicking the &quot;Scan License&quot; button!
               </p>
               <button
                 className="btn btn-primary"
