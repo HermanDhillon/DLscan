@@ -27,7 +27,7 @@ function Hero() {
                 This simple application allows you to use your webcam to scan
                 the barcode on your USA issued Driver License and extract
                 information from it to use however you want. Information such
-                as: Full name, Address, DL issuance & expiration dates, etc. Get
+                as: Full name, Address, DL issuance & expiration dates. Get
                 started by clicking the &quot;Scan License&quot; button!
               </p>
               <button
