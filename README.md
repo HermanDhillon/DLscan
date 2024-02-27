@@ -78,6 +78,8 @@ As with any project, things do not go as smoothly as we anticipate. During the d
 
 ## Project Architecture
 
+The architecture of the project is simple, due to it being a front-end only app. After building we have a minimal app where a small amount of business logic is handled in the browser, requires no API calls to a server, and has no database. This would be considered One-tier architecture. The application flow is visualized in a sequence diagram below.
+
 ```mermaid
 sequenceDiagram
 
