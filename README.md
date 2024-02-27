@@ -77,3 +77,22 @@ As with any project, things do not go as smoothly as we anticipate. During the d
 - **License:** USA driver license, issued on or after 2019. Licenses issued before 2019 are not guaranteed to have a PDF417 barcode.
 
 ## Project Architecture
+```mermaid
+sequenceDiagram
+
+actor user
+participant index.html
+participant react-zxing
+participant dl-parser
+
+user->>index.html: load
+user->>index.html: click "Scan License"
+index.html->>user: ask for cam perms
+note over index.html: permission granted
+note over index.html: scan DL
+index.html->>react-zxing: decode DL
+note over react-zxing: Barcode decoded
+react-zxing->>dl-parser: raw payload
+dl-parser->>index.html: parsed DL info
+index.html->>user: render results UI
+```
