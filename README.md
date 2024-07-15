@@ -1,6 +1,6 @@
 # DLscan
 
-The working application can be used at: [http://dlscan.netlify.com](http://dlscan.netlify.com)
+The working application can be used at: [http://dlscan.netlify.com](http://dlscan.netlify.app)
 
 ## About This Project
 
